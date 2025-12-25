@@ -31,32 +31,6 @@ torch-geometric
 transformers
 ```
 
-## 快速开始
-
-### 1. 安装依赖
-
-```
-pip install -r requirements.txt
-```
-
-### 2. 数据预处理
-
-```
-python dataprocess.py --input <源代码目录> --output <输出目录>
-```
-
-### 3. 模型训练
-
-```
-python graphvul.py --mode train --data <数据路径>
-```
-
-### 4. 漏洞检测
-
-```
-python graphvul.py --mode predict --model <模型路径> --input <待检测代码>
-```
-
 ## 方法概述
 
 GraphVul 采用四阶段语义-结构协同演化流程：
