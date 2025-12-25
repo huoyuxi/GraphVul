@@ -1,0 +1,242 @@
+{
+  "full_model": {
+    "config": {
+      "use_node_mil": true,
+      "use_tair": true,
+      "use_curriculum": true,
+      "use_pruning": true,
+      "use_contrastive": true,
+      "best_threshold": 0.2590909090909091,
+      "use_graph_svm": true,
+      "encoder_type": "unixcoder"
+    },
+    "test_results": {
+      "accuracy": 0.8371161548731643,
+      "precision": 0.34591194968553457,
+      "recall": 0.7534246575342466,
+      "f1": 0.47413793103448276,
+      "tp": 165,
+      "tn": 1716,
+      "fp": 312,
+      "fn": 54,
+      "specificity": 0.8461538461538461,
+      "fpr": 0.15384615384615385,
+      "fnr": 0.2465753424657534,
+      "auc": 0.8786464384462277
+    },
+    "svm_test_results": {
+      "accuracy": 0.8130841121495327,
+      "precision": 0.3092979127134725,
+      "recall": 0.7442922374429224,
+      "f1": 0.43699731903485256,
+      "tp": 163,
+      "tn": 1664,
+      "fp": 364,
+      "fn": 56,
+      "specificity": 0.8205128205128205,
+      "fpr": 0.1794871794871795,
+      "fnr": 0.2557077625570776,
+      "auc": 0.8107657182999648
+    }
+  },
+  "wo_node_mil": {
+    "config": {
+      "use_node_mil": false,
+      "use_tair": true,
+      "use_curriculum": true,
+      "use_pruning": true,
+      "use_contrastive": true,
+      "best_threshold": 0.2318181818181818,
+      "use_graph_svm": true,
+      "encoder_type": "unixcoder"
+    },
+    "test_results": {
+      "accuracy": 0.8277703604806409,
+      "precision": 0.33064516129032256,
+      "recall": 0.7488584474885844,
+      "f1": 0.45874125874125876,
+      "tp": 164,
+      "tn": 1696,
+      "fp": 332,
+      "fn": 55,
+      "specificity": 0.8362919132149902,
+      "fpr": 0.16370808678500987,
+      "fnr": 0.2511415525114155,
+      "auc": 0.8762991633118081
+    },
+    "svm_test_results": {
+      "accuracy": 0.7881619937694704,
+      "precision": 0.26846846846846845,
+      "recall": 0.680365296803653,
+      "f1": 0.3850129198966408,
+      "tp": 149,
+      "tn": 1622,
+      "fp": 406,
+      "fn": 70,
+      "specificity": 0.7998027613412229,
+      "fpr": 0.20019723865877712,
+      "fnr": 0.319634703196347,
+      "auc": 0.7850706546702331
+    }
+  },
+  "wo_tair": {
+    "config": {
+      "use_node_mil": true,
+      "use_tair": false,
+      "use_curriculum": true,
+      "use_pruning": true,
+      "use_contrastive": true,
+      "best_threshold": 0.05,
+      "use_graph_svm": true,
+      "encoder_type": "unixcoder"
+    },
+    "test_results": {
+      "accuracy": 0.8495772140631954,
+      "precision": 0.37367303609341823,
+      "recall": 0.8036529680365296,
+      "f1": 0.5101449275362319,
+      "tp": 176,
+      "tn": 1733,
+      "fp": 295,
+      "fn": 43,
+      "specificity": 0.8545364891518737,
+      "fpr": 0.14546351084812623,
+      "fnr": 0.1963470319634703,
+      "auc": 0.884320427260364
+    },
+    "svm_test_results": {
+      "accuracy": 0.8295505117935025,
+      "precision": 0.31447963800904977,
+      "recall": 0.634703196347032,
+      "f1": 0.4205748865355522,
+      "tp": 139,
+      "tn": 1725,
+      "fp": 303,
+      "fn": 80,
+      "specificity": 0.8505917159763313,
+      "fpr": 0.14940828402366865,
+      "fnr": 0.365296803652968,
+      "auc": 0.8036248232507452
+    }
+  },
+  "wo_curriculum": {
+    "config": {
+      "use_node_mil": true,
+      "use_tair": true,
+      "use_curriculum": false,
+      "use_pruning": false,
+      "use_contrastive": true,
+      "best_threshold": 0.3409090909090909,
+      "use_graph_svm": true,
+      "encoder_type": "unixcoder"
+    },
+    "test_results": {
+      "accuracy": 0.8322207387627948,
+      "precision": 0.33811475409836067,
+      "recall": 0.7534246575342466,
+      "f1": 0.4667609618104668,
+      "tp": 165,
+      "tn": 1705,
+      "fp": 323,
+      "fn": 54,
+      "specificity": 0.8407297830374754,
+      "fpr": 0.15927021696252466,
+      "fnr": 0.2465753424657534,
+      "auc": 0.8715122981455963
+    },
+    "svm_test_results": {
+      "accuracy": 0.8006230529595015,
+      "precision": 0.28835489833641403,
+      "recall": 0.7123287671232876,
+      "f1": 0.4105263157894737,
+      "tp": 156,
+      "tn": 1643,
+      "fp": 385,
+      "fn": 63,
+      "specificity": 0.8101577909270217,
+      "fpr": 0.1898422090729783,
+      "fnr": 0.2876712328767123,
+      "auc": 0.7980735457026289
+    }
+  },
+  "wo_contrastive": {
+    "config": {
+      "use_node_mil": true,
+      "use_tair": true,
+      "use_curriculum": true,
+      "use_pruning": true,
+      "use_contrastive": false,
+      "best_threshold": 0.35,
+      "use_graph_svm": true,
+      "encoder_type": "unixcoder"
+    },
+    "test_results": {
+      "accuracy": 0.8406764574988874,
+      "precision": 0.3431151241534989,
+      "recall": 0.6940639269406392,
+      "f1": 0.459214501510574,
+      "tp": 152,
+      "tn": 1737,
+      "fp": 291,
+      "fn": 67,
+      "specificity": 0.856508875739645,
+      "fpr": 0.14349112426035504,
+      "fnr": 0.3059360730593607,
+      "auc": 0.8686730521556654
+    },
+    "svm_test_results": {
+      "accuracy": 0.778816199376947,
+      "precision": 0.27724358974358976,
+      "recall": 0.7899543378995434,
+      "f1": 0.41043890865954924,
+      "tp": 173,
+      "tn": 1577,
+      "fp": 451,
+      "fn": 46,
+      "specificity": 0.7776134122287969,
+      "fpr": 0.22238658777120315,
+      "fnr": 0.2100456621004566,
+      "auc": 0.8047247214791999
+    }
+  },
+  "baseline": {
+    "config": {
+      "use_node_mil": false,
+      "use_tair": false,
+      "use_curriculum": false,
+      "use_pruning": false,
+      "use_contrastive": false,
+      "best_threshold": 0.44090909090909086,
+      "use_graph_svm": true,
+      "encoder_type": "unixcoder"
+    },
+    "test_results": {
+      "accuracy": 0.855807743658211,
+      "precision": 0.3747016706443914,
+      "recall": 0.7168949771689498,
+      "f1": 0.49216300940438873,
+      "tp": 157,
+      "tn": 1766,
+      "fp": 262,
+      "fn": 62,
+      "specificity": 0.8708086785009862,
+      "fpr": 0.1291913214990138,
+      "fnr": 0.2831050228310502,
+      "auc": 0.8579093602802771
+    },
+    "svm_test_results": {
+      "accuracy": 0.8362260792167334,
+      "precision": 0.3132832080200501,
+      "recall": 0.5707762557077626,
+      "f1": 0.4045307443365696,
+      "tp": 125,
+      "tn": 1754,
+      "fp": 274,
+      "fn": 94,
+      "specificity": 0.8648915187376726,
+      "fpr": 0.1351084812623274,
+      "fnr": 0.4292237442922374,
+      "auc": 0.8183625588788919
+    }
+  }
+}
